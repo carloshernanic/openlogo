@@ -55,7 +55,8 @@
     "import:icon": "tsx scripts/import-simple-icons.ts",
     "accuracy": "tsx scripts/accuracy.ts",
     "preaccuracy": "npm run build:index",
-    "validate:svgs": "tsx scripts/validate-svgs.ts"
+    "validate:svgs": "tsx scripts/validate-svgs.ts",
+    "validate": "npm run validate:brands && npm run validate:svgs"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
