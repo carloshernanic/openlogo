@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Apple",
+  "slug": "apple",
+  "website": "https://www.apple.com/br",
+  "category": "software",
+  "colors": [
+    "#000000"
+  ],
+  "aliases": [
+    "APPLE",
+    "APPLE.COM/BILL",
+    "APPLE COM BILL",
+    "ITUNES"
+  ],
+  "logoSource": "simple-icons@16.36.0 (apple): https://www.apple.com"
+}

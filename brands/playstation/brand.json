@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "PlayStation",
+  "slug": "playstation",
+  "website": "https://www.playstation.com/pt-br",
+  "category": "games",
+  "colors": [
+    "#0070D1"
+  ],
+  "aliases": [
+    "PLAYSTATION",
+    "PLAYSTATION NETWORK",
+    "SONY PLAYSTATION",
+    "PSN"
+  ],
+  "logoSource": "simple-icons@16.36.0 (playstation): https://www.playstation.com/en-us/"
+}

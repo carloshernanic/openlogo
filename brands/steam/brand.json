@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Steam",
+  "slug": "steam",
+  "website": "https://store.steampowered.com",
+  "category": "games",
+  "colors": [
+    "#000000"
+  ],
+  "aliases": [
+    "STEAM",
+    "STEAMGAMES",
+    "STEAM PURCHASE",
+    "VALVE"
+  ],
+  "logoSource": "simple-icons@16.36.0 (steam): https://partner.steamgames.com/doc/marketing/branding"
+}

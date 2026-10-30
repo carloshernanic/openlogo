@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Google Play",
+  "slug": "google-play",
+  "website": "https://play.google.com",
+  "category": "software",
+  "colors": [
+    "#414141"
+  ],
+  "aliases": [
+    "GOOGLE PLAY",
+    "GOOGLEPLAY"
+  ],
+  "logoSource": "simple-icons@16.36.0 (googleplay): https://partnermarketinghub.withgoogle.com/brands/google-play/visual-identity/primary-logos/"
+}

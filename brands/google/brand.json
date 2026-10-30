@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Google",
+  "slug": "google",
+  "website": "https://www.google.com",
+  "category": "software",
+  "colors": [
+    "#4285F4"
+  ],
+  "aliases": [
+    "GOOGLE",
+    "GOOGLE ONE",
+    "GOOGLE STORAGE",
+    "GOOGLE CLOUD"
+  ],
+  "logoSource": "simple-icons@16.36.0 (google): https://partnermarketinghub.withgoogle.com"
+}
