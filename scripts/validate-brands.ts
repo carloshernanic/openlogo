@@ -5,7 +5,7 @@ import { Ajv } from 'ajv';
 import addFormats from 'ajv-formats';
 import { ROOT, listBrandFolders, loadBrand, type BrandEntry } from './lib/brands.ts';
 import { privacyProblem } from './lib/privacy.ts';
-import { aliasKey } from './lib/alias-key.ts';
+import { normalizeAlias } from '../src/normalize.ts';
 
 const schema = JSON.parse(readFileSync(join(ROOT, 'schema', 'brand.schema.json'), 'utf8'));
 const ajv = new Ajv({ allErrors: true });
@@ -46,7 +46,7 @@ for (const folder of folders) {
     const problem = privacyProblem(alias);
     if (problem) errors.push(`${where}: alias "${alias}" ${problem}`);
 
-    const key = aliasKey(alias);
+    const key = normalizeAlias(alias);
     if (!key) {
       errors.push(`${where}: alias "${alias}" fica vazio depois da normalização`);
       continue;
