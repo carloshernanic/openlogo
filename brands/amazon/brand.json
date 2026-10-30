@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Amazon",
+  "slug": "amazon",
+  "website": "https://www.amazon.com.br",
+  "category": "retail",
+  "colors": [
+    "#FF9900"
+  ],
+  "aliases": [
+    "AMAZON",
+    "AMAZON.COM.BR",
+    "AMAZON BR",
+    "AMAZON MARKETPLACE",
+    "AMAZON SERVICOS DE VAREJO DO BRASIL",
+    "AMZN"
+  ],
+  "logoStatus": "missing"
+}

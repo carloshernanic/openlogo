@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Renner",
+  "slug": "renner",
+  "website": "https://www.lojasrenner.com.br",
+  "category": "retail",
+  "colors": [
+    "#D2001E"
+  ],
+  "aliases": [
+    "RENNER",
+    "LOJAS RENNER"
+  ],
+  "logoStatus": "missing"
+}

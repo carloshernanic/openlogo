@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Leroy Merlin",
+  "slug": "leroy-merlin",
+  "website": "https://www.leroymerlin.com.br",
+  "category": "retail",
+  "colors": [
+    "#78BE20"
+  ],
+  "aliases": [
+    "LEROY MERLIN",
+    "LEROYMERLIN"
+  ],
+  "logoSource": "simple-icons@16.36.0 (leroymerlin): https://www.leroymerlin.fr"
+}

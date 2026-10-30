@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Zara",
+  "slug": "zara",
+  "website": "https://www.zara.com/br",
+  "category": "retail",
+  "colors": [
+    "#000000"
+  ],
+  "aliases": [
+    "ZARA",
+    "ZARA BRASIL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (zara): https://www.zara.com"
+}

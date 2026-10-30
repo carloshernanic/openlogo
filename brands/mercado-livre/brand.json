@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Mercado Livre",
+  "slug": "mercado-livre",
+  "website": "https://www.mercadolivre.com.br",
+  "category": "retail",
+  "colors": [
+    "#FFE600"
+  ],
+  "aliases": [
+    "MERCADO LIVRE",
+    "MERCADOLIVRE",
+    "MERCADOLIVRE.COM"
+  ],
+  "logoStatus": "missing"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "AliExpress",
+  "slug": "aliexpress",
+  "website": "https://pt.aliexpress.com",
+  "category": "retail",
+  "colors": [
+    "#FF4747"
+  ],
+  "aliases": [
+    "ALIEXPRESS",
+    "ALIEXPRESS.COM"
+  ],
+  "logoSource": "simple-icons@16.36.0 (aliexpress): https://www.alibabagroup.com/en/ir/reports"
+}

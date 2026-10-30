@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Casas Bahia",
+  "slug": "casas-bahia",
+  "website": "https://www.casasbahia.com.br",
+  "category": "retail",
+  "colors": [
+    "#0033C6"
+  ],
+  "aliases": [
+    "CASAS BAHIA",
+    "CASASBAHIA",
+    "GRUPO CASAS BAHIA",
+    "VIA VAREJO"
+  ],
+  "logoStatus": "missing"
+}

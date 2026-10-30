@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Shopee",
+  "slug": "shopee",
+  "website": "https://shopee.com.br",
+  "category": "retail",
+  "colors": [
+    "#EE4D2D"
+  ],
+  "aliases": [
+    "SHOPEE",
+    "SHOPEE BRASIL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (shopee): https://shopee.com"
+}

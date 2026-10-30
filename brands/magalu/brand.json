@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Magalu",
+  "slug": "magalu",
+  "website": "https://www.magazineluiza.com.br",
+  "category": "retail",
+  "colors": [
+    "#0086FF"
+  ],
+  "aliases": [
+    "MAGALU",
+    "MAGAZINE LUIZA",
+    "MAGAZINELUIZA"
+  ],
+  "logoStatus": "missing"
+}

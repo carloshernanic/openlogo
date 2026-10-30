@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Shein",
+  "slug": "shein",
+  "website": "https://br.shein.com",
+  "category": "retail",
+  "colors": [
+    "#000000"
+  ],
+  "aliases": [
+    "SHEIN",
+    "SHEIN.COM",
+    "SHEIN BRASIL"
+  ],
+  "logoStatus": "missing"
+}

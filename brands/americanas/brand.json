@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Americanas",
+  "slug": "americanas",
+  "website": "https://www.americanas.com.br",
+  "category": "retail",
+  "colors": [
+    "#E60014"
+  ],
+  "aliases": [
+    "AMERICANAS",
+    "LOJAS AMERICANAS",
+    "AMERICANAS.COM"
+  ],
+  "logoStatus": "missing"
+}
