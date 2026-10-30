@@ -51,7 +51,8 @@
     "prebuild": "npm run build:index",
     "pretest": "npm run build:index",
     "pretypecheck": "npm run build:index",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "import:icon": "tsx scripts/import-simple-icons.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
@@ -60,6 +61,7 @@
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "husky": "^9.1.7",
+    "simple-icons": "16.36.0",
     "tsup": "^9.0.0",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
