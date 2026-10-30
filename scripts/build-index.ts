@@ -31,8 +31,9 @@ function buildIndex(entries: BrandEntry[]) {
 
   const aliases: Array<[string, number]> = [];
   entries.forEach(({ data }, brand) => {
-    const keys = new Set([data.slug.replace(/-/g, ' '), data.name, ...data.aliases].map(normalizeAlias));
-    for (const key of keys) if (key) aliases.push([key, brand]);
+    const keys = new Set([data.name, ...data.aliases].map(normalizeAlias));
+    // Alias só de números ("99") casaria com qualquer valor ou número de loja no extrato.
+    for (const key of keys) if (key && !/^[\d ]+$/.test(key)) aliases.push([key, brand]);
   });
   return { brands, aliases };
 }
