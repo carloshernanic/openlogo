@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "99",
+  "slug": "99",
+  "website": "https://99app.com",
+  "category": "transport",
+  "colors": [
+    "#FFDD00"
+  ],
+  "aliases": [
+    "99APP",
+    "99 APP",
+    "99 POP",
+    "99 TECNOLOGIA",
+    "99 TAXI",
+    "99FOOD",
+    "99 FOOD"
+  ],
+  "logoStatus": "missing"
+}

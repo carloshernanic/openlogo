@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Sem Parar",
+  "slug": "sem-parar",
+  "website": "https://www.semparar.com.br",
+  "category": "transport",
+  "colors": [
+    "#E30613"
+  ],
+  "aliases": [
+    "SEM PARAR",
+    "SEMPARAR"
+  ],
+  "logoStatus": "missing"
+}

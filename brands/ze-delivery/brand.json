@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Zé Delivery",
+  "slug": "ze-delivery",
+  "website": "https://www.ze.delivery",
+  "category": "delivery",
+  "colors": [
+    "#FFC600"
+  ],
+  "aliases": [
+    "ZE DELIVERY",
+    "ZEDELIVERY",
+    "ZE DELIVERY BEBIDAS"
+  ],
+  "logoStatus": "missing"
+}

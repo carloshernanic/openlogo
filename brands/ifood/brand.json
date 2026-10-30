@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "iFood",
+  "slug": "ifood",
+  "website": "https://www.ifood.com.br",
+  "category": "delivery",
+  "colors": [
+    "#EA1D2C"
+  ],
+  "aliases": [
+    "IFOOD",
+    "IFOOD.COM",
+    "IFOOD.COM AGENCIA DE RESTAURANTES ONLINE S.A.",
+    "IFOOD CLUB"
+  ],
+  "logoSource": "simple-icons@16.36.0 (ifood): https://ifood.com.br"
+}

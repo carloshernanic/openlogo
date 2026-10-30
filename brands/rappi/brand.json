@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Rappi",
+  "slug": "rappi",
+  "website": "https://www.rappi.com.br",
+  "category": "delivery",
+  "colors": [
+    "#FF441F"
+  ],
+  "aliases": [
+    "RAPPI",
+    "RAPPI BRASIL",
+    "RAPPI PRIME"
+  ],
+  "logoStatus": "missing"
+}
