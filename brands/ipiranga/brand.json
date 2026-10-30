@@ -9,9 +9,11 @@
     "#FFCC00"
   ],
   "aliases": [
-    "IPIRANGA",
     "POSTO IPIRANGA",
     "ABASTECE AI"
+  ],
+  "strictAliases": [
+    "IPIRANGA"
   ],
   "logoStatus": "missing"
 }

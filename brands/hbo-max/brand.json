@@ -9,7 +9,9 @@
   ],
   "aliases": [
     "HBO MAX",
-    "HBOMAX",
+    "HBOMAX"
+  ],
+  "strictAliases": [
     "HBO"
   ],
   "logoSource": "simple-icons@16.36.0 (hbomax): https://commons.wikimedia.org/wiki/File:Max_2025_logo.svg"

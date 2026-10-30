@@ -8,10 +8,11 @@
     "#004691"
   ],
   "aliases": [
-    "TIM",
-    "TIM S A",
     "TIM BRASIL",
     "TIM CELULAR"
+  ],
+  "strictAliases": [
+    "TIM"
   ],
   "logoStatus": "missing"
 }

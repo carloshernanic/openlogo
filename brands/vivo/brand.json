@@ -8,11 +8,13 @@
     "#660099"
   ],
   "aliases": [
-    "VIVO",
     "TELEFONICA BRASIL",
     "VIVO FIBRA",
     "VIVO MOVEL",
     "VIVO EASY"
+  ],
+  "strictAliases": [
+    "VIVO"
   ],
   "logoStatus": "missing"
 }

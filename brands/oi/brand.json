@@ -8,10 +8,11 @@
     "#FF6B00"
   ],
   "aliases": [
-    "OI",
     "OI FIBRA",
-    "OI MOVEL",
-    "OI S.A."
+    "OI MOVEL"
+  ],
+  "strictAliases": [
+    "OI"
   ],
   "logoStatus": "missing"
 }
