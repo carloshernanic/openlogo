@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Caixa Econômica Federal",
+  "slug": "caixa",
+  "website": "https://www.caixa.gov.br",
+  "category": "bank",
+  "colors": [
+    "#005CA9",
+    "#F39200"
+  ],
+  "aliases": [
+    "CAIXA ECONOMICA FEDERAL",
+    "CAIXA ECONOMICA",
+    "CEF",
+    "CAIXA TEM"
+  ],
+  "logoStatus": "missing"
+}

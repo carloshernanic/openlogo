@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Mercado Pago",
+  "slug": "mercado-pago",
+  "website": "https://www.mercadopago.com.br",
+  "category": "fintech",
+  "colors": [
+    "#00B1EA"
+  ],
+  "aliases": [
+    "MERCADO PAGO",
+    "MERCADOPAGO",
+    "MERCADO PAGO IP"
+  ],
+  "logoSource": "simple-icons@16.36.0 (mercadopago): https://www.mercadopago.com"
+}

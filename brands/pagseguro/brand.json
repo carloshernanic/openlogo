@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "PagSeguro",
+  "slug": "pagseguro",
+  "website": "https://pagseguro.uol.com.br",
+  "category": "fintech",
+  "colors": [
+    "#FFC801"
+  ],
+  "aliases": [
+    "PAGSEGURO",
+    "PAG SEGURO",
+    "PAGSEGURO INTERNET",
+    "PAGBANK"
+  ],
+  "logoSource": "simple-icons@16.36.0 (pagseguro): https://pagseguro.uol.com.br"
+}

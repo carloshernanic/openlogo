@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "PicPay",
+  "slug": "picpay",
+  "website": "https://picpay.com",
+  "category": "fintech",
+  "colors": [
+    "#21C25E"
+  ],
+  "aliases": [
+    "PICPAY",
+    "PICPAY SERVICOS",
+    "PICPAY BANK"
+  ],
+  "logoSource": "simple-icons@16.36.0 (picpay): https://www.picpay.com/site/sobre-nos"
+}

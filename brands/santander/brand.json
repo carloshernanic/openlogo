@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Santander",
+  "slug": "santander",
+  "website": "https://www.santander.com.br",
+  "category": "bank",
+  "colors": [
+    "#EC0000"
+  ],
+  "aliases": [
+    "SANTANDER",
+    "BANCO SANTANDER",
+    "SANTANDER BRASIL",
+    "SANTANDER CARTOES"
+  ],
+  "logoStatus": "missing"
+}

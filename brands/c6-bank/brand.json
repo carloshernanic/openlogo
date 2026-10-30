@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "C6 Bank",
+  "slug": "c6-bank",
+  "website": "https://www.c6bank.com.br",
+  "category": "bank",
+  "colors": [
+    "#242424"
+  ],
+  "aliases": [
+    "C6 BANK",
+    "C6BANK",
+    "BANCO C6"
+  ],
+  "logoStatus": "missing"
+}

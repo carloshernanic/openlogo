@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Banco Inter",
+  "slug": "inter",
+  "website": "https://inter.co",
+  "category": "bank",
+  "colors": [
+    "#FF7A00"
+  ],
+  "aliases": [
+    "BANCO INTER",
+    "INTER&CO",
+    "INTERPAG"
+  ],
+  "logoStatus": "missing"
+}

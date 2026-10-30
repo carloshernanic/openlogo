@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Bradesco",
+  "slug": "bradesco",
+  "website": "https://banco.bradesco",
+  "category": "bank",
+  "colors": [
+    "#CC092F"
+  ],
+  "aliases": [
+    "BRADESCO",
+    "BANCO BRADESCO",
+    "BRADESCO CARTOES",
+    "BRADESCARD"
+  ],
+  "logoStatus": "missing"
+}

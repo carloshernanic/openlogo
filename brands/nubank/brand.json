@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Nubank",
+  "slug": "nubank",
+  "website": "https://nubank.com.br",
+  "category": "fintech",
+  "colors": [
+    "#820AD1"
+  ],
+  "aliases": [
+    "NUBANK",
+    "NU PAGAMENTOS",
+    "NU FINANCEIRA",
+    "NUCONTA",
+    "NUPAY"
+  ],
+  "logoSource": "simple-icons@16.36.0 (nubank): https://nubank.com.br/en/press/"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Banco do Brasil",
+  "slug": "banco-do-brasil",
+  "website": "https://www.bb.com.br",
+  "category": "bank",
+  "colors": [
+    "#FCFC30",
+    "#003DA5"
+  ],
+  "aliases": [
+    "BANCO DO BRASIL",
+    "BCO DO BRASIL",
+    "BB BANCO DO BRASIL",
+    "OUROCARD"
+  ],
+  "logoStatus": "missing"
+}

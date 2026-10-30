@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "PayPal",
+  "slug": "paypal",
+  "website": "https://www.paypal.com/br",
+  "category": "fintech",
+  "colors": [
+    "#002991"
+  ],
+  "aliases": [
+    "PAYPAL",
+    "PAYPAL DO BRASIL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (paypal): https://www.paypal.com/us"
+}

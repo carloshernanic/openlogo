@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Itaú",
+  "slug": "itau",
+  "website": "https://www.itau.com.br",
+  "category": "bank",
+  "colors": [
+    "#EC7000",
+    "#003399"
+  ],
+  "aliases": [
+    "ITAU",
+    "ITAU UNIBANCO",
+    "BANCO ITAU",
+    "ITAUCARD"
+  ],
+  "logoStatus": "missing"
+}
