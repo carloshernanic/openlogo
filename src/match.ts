@@ -28,8 +28,13 @@ export const STAGE_CONFIDENCE = { exact: 1, tokens: 0.9, prefix: 0.8, fuzzyMin: 
 // Strings curtas demais geram falsos positivos ("CLARA" ~ "CLARO").
 const MIN_PREFIX_LENGTH = 5;
 const MIN_FUZZY_LENGTH = 6;
+// O bônus de prefixo do Jaro-Winkler aproxima "DROGARIA" de "DROGARIASAOPAULO";
+// exigir tamanhos parecidos deixa o fuzzy só para erros de digitação.
+const MIN_FUZZY_LENGTH_RATIO = 0.75;
 // Diferença mínima entre a melhor marca e a segunda no fuzzy; abaixo disso é empate.
 const FUZZY_TIE_MARGIN = 0.02;
+
+const lengthRatio = (a: string, b: string) => Math.min(a.length, b.length) / Math.max(a.length, b.length);
 
 interface PreparedAlias {
   key: string;
@@ -107,22 +112,28 @@ export function createMatcher(entries: readonly AliasEntry[]) {
       return brand === null ? null : { brand, stage: 'tokens', confidence: STAGE_CONFIDENCE.tokens };
     }
 
-    // 3. Prefixo: descritor truncado ("NETFLI") ou alias colado a outro texto ("SPOTIFYBR").
-    // No truncado todos os candidatos têm a mesma nota, então duas marcas sempre empatam.
-    const truncated = aliases
-      .filter(
-        (a) =>
-          a.compact.startsWith(queryCompact) &&
-          queryCompact.length >= MIN_PREFIX_LENGTH &&
-          queryCompact.length * 2 >= a.compact.length,
-      )
-      .map((a) => ({ brand: a.brand, score: queryCompact.length }));
+    // 3a. Prefixo truncado: o extrato cortou o nome ("NETFLI", "DROGARIA SAO PAU").
+    // Só vale se o corte cai no meio de uma palavra e aponta para uma única marca;
+    // "DROGARIA" ou "MERCADO" sozinhos são palavras genéricas, não truncamento.
+    if (queryCompact.length >= MIN_PREFIX_LENGTH) {
+      const truncated = aliases.filter(
+        (a) => a.compact.startsWith(queryCompact) && a.compact.length > queryCompact.length && queryCompact.length * 2 >= a.compact.length,
+      );
+      if (truncated.length > 0) {
+        const brands = new Set(truncated.map((a) => a.brand));
+        const cutMidWord = truncated.every((a) => !a.key.startsWith(query) || a.key[query.length] !== ' ');
+        const [brand] = brands;
+        if (brands.size > 1 || !cutMidWord || brand === undefined) return null;
+        return { brand, stage: 'prefix', confidence: STAGE_CONFIDENCE.prefix };
+      }
+    }
+
+    // 3b. Alias colado a outro texto ("SPOTIFYBR"). O alias mais longo vence.
     const glued = aliases
       .filter((a) => queryCompact.startsWith(a.compact) && a.compact.length >= MIN_PREFIX_LENGTH)
       .map((a) => ({ brand: a.brand, score: a.compact.length }));
-    const prefixed = [...truncated, ...glued];
-    if (prefixed.length > 0) {
-      const brand = pickUnique(prefixed);
+    if (glued.length > 0) {
+      const brand = pickUnique(glued);
       return brand === null ? null : { brand, stage: 'prefix', confidence: STAGE_CONFIDENCE.prefix };
     }
 
@@ -130,7 +141,7 @@ export function createMatcher(entries: readonly AliasEntry[]) {
     const threshold = options.fuzzyThreshold ?? DEFAULT_FUZZY_THRESHOLD;
     if (queryCompact.length < MIN_FUZZY_LENGTH) return null;
     const scored = aliases
-      .filter((a) => a.compact.length >= MIN_FUZZY_LENGTH)
+      .filter((a) => a.compact.length >= MIN_FUZZY_LENGTH && lengthRatio(a.compact, queryCompact) >= MIN_FUZZY_LENGTH_RATIO)
       .map((a) => ({ brand: a.brand, score: jaroWinkler(queryCompact, a.compact) }))
       .filter((s) => s.score >= threshold);
     const brand = pickUnique(scored, FUZZY_TIE_MARGIN);

@@ -66,8 +66,18 @@ describe('etapa de prefixo', () => {
     expect(resolveSlug(descriptor)).toEqual({ slug, stage: 'prefix', confidence: 0.8 });
   });
 
+  it('aceita corte no meio da palavra em alias de várias palavras', () => {
+    expect(resolveSlug('DROGARIA SAO PAU')).toEqual({ slug: 'drogaria-sao-paulo', stage: 'prefix', confidence: 0.8 });
+    expect(resolveSlug('MERCADOLIVR')).toEqual({ slug: 'mercado-livre', stage: 'prefix', confidence: 0.8 });
+  });
+
   it('devolve null quando o prefixo serve para duas marcas', () => {
     expect(resolveSlug('DROGA')).toBeNull();
+  });
+
+  it('não trata palavra genérica inteira como truncamento', () => {
+    expect(resolveSlug('DROGARIA')).toBeNull();
+    expect(resolveSlug('MERCADO')).toBeNull();
   });
 });
 
