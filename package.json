@@ -52,7 +52,9 @@
     "pretest": "npm run build:index",
     "pretypecheck": "npm run build:index",
     "prepack": "npm run build",
-    "import:icon": "tsx scripts/import-simple-icons.ts"
+    "import:icon": "tsx scripts/import-simple-icons.ts",
+    "accuracy": "tsx scripts/accuracy.ts",
+    "preaccuracy": "npm run build:index"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
