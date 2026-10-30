@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Booking.com",
+  "slug": "booking",
+  "website": "https://www.booking.com",
+  "category": "travel",
+  "colors": [
+    "#003A9A"
+  ],
+  "aliases": [
+    "BOOKING.COM",
+    "BOOKING COM",
+    "BOOKING"
+  ],
+  "logoSource": "simple-icons@16.36.0 (bookingdotcom): https://www.bookingholdings.com/media-room"
+}

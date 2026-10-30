@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Starbucks",
+  "slug": "starbucks",
+  "website": "https://www.starbucks.com.br",
+  "category": "food",
+  "colors": [
+    "#006241"
+  ],
+  "aliases": [
+    "STARBUCKS",
+    "STARBUCKS COFFEE"
+  ],
+  "logoSource": "simple-icons@16.36.0 (starbucks): https://starbucks.com"
+}

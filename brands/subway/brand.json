@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Subway",
+  "slug": "subway",
+  "website": "https://www.subway.com/pt-br",
+  "category": "food",
+  "colors": [
+    "#008C15",
+    "#FFC600"
+  ],
+  "aliases": [
+    "SUBWAY"
+  ],
+  "logoStatus": "missing"
+}

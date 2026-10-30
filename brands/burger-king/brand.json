@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Burger King",
+  "slug": "burger-king",
+  "website": "https://www.burgerking.com.br",
+  "category": "food",
+  "colors": [
+    "#D62300"
+  ],
+  "aliases": [
+    "BURGER KING",
+    "BURGERKING",
+    "BK BRASIL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (burgerking): https://www.bk.com"
+}

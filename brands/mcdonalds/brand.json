@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "McDonald's",
+  "slug": "mcdonalds",
+  "website": "https://www.mcdonalds.com.br",
+  "category": "food",
+  "colors": [
+    "#FBC817",
+    "#DA291C"
+  ],
+  "aliases": [
+    "MCDONALDS",
+    "MC DONALDS",
+    "ARCOS DOURADOS"
+  ],
+  "logoSource": "simple-icons@16.36.0 (mcdonalds): https://www.mcdonalds.com/gb/en-gb/newsroom.html"
+}

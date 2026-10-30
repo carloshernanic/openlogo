@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Airbnb",
+  "slug": "airbnb",
+  "website": "https://www.airbnb.com.br",
+  "category": "travel",
+  "colors": [
+    "#FF5A5F"
+  ],
+  "aliases": [
+    "AIRBNB",
+    "AIRBNB PAYMENTS"
+  ],
+  "logoSource": "simple-icons@16.36.0 (airbnb): https://www.airbnb.com"
+}

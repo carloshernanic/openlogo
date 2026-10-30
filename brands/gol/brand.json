@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "GOL Linhas Aéreas",
+  "slug": "gol",
+  "website": "https://www.voegol.com.br",
+  "category": "travel",
+  "colors": [
+    "#FF5A00"
+  ],
+  "aliases": [
+    "GOL LINHAS AEREAS",
+    "GOL TRANSPORTES AEREOS",
+    "VOEGOL"
+  ],
+  "logoStatus": "missing"
+}

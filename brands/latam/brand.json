@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "LATAM Airlines",
+  "slug": "latam",
+  "website": "https://www.latamairlines.com/br",
+  "category": "travel",
+  "colors": [
+    "#1B0088",
+    "#E8114B"
+  ],
+  "aliases": [
+    "LATAM",
+    "LATAM AIRLINES",
+    "TAM LINHAS AEREAS"
+  ],
+  "logoStatus": "missing"
+}

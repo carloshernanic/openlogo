@@ -1,0 +1,14 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "KFC",
+  "slug": "kfc",
+  "website": "https://www.kfcbrasil.com.br",
+  "category": "food",
+  "colors": [
+    "#F40027"
+  ],
+  "aliases": [
+    "KFC"
+  ],
+  "logoSource": "simple-icons@16.36.0 (kfc): https://global.kfc.com/asset-library/"
+}

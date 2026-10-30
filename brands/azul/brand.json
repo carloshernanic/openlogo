@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Azul Linhas Aéreas",
+  "slug": "azul",
+  "website": "https://www.voeazul.com.br",
+  "category": "travel",
+  "colors": [
+    "#002F87"
+  ],
+  "aliases": [
+    "AZUL LINHAS AEREAS",
+    "AZUL VIAGENS",
+    "VOEAZUL"
+  ],
+  "logoStatus": "missing"
+}
