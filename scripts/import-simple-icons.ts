@@ -6,6 +6,8 @@
 // o mesmo slug pode ser outra empresa (no simple-icons, "vivo" é a fabricante de celulares).
 import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { optimize, type Config } from 'svgo';
+import svgoConfig from '../svgo.config.mjs';
 import { BRANDS_DIR, ROOT, type BrandJson } from './lib/brands.ts';
 
 interface SimpleIcon {
@@ -41,7 +43,9 @@ function luminance(hex: string): number {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }
 
-const withFill = (svg: string, hex: string) => svg.replace('<svg ', `<svg fill="#${hex}" `);
+/** Aplica a cor e já grava no formato que o svgo do CI espera. */
+const colored = (svg: string, hex: string) =>
+  `${optimize(svg.replace('<svg ', `<svg fill="#${hex}" `), svgoConfig as Config).data}\n`;
 
 const [brandSlug, iconSlug] = process.argv.slice(2);
 if (!brandSlug || !iconSlug) {
@@ -68,12 +72,12 @@ if (!icon) {
 }
 
 const svg = readFileSync(join(SI_DIR, 'icons', `${iconSlug}.svg`), 'utf8').trim();
-writeFileSync(join(brandDir, 'logo.svg'), `${withFill(svg, icon.hex)}\n`);
+writeFileSync(join(brandDir, 'logo.svg'), colored(svg, icon.hex));
 
 // Cor muito escura some em fundo escuro: gera uma versão branca do mesmo desenho.
 const darkFile = join(brandDir, 'logo-dark.svg');
 const needsDark = luminance(icon.hex) < 0.05;
-if (needsDark) writeFileSync(darkFile, `${withFill(svg, 'FFFFFF')}\n`);
+if (needsDark) writeFileSync(darkFile, colored(svg, 'FFFFFF'));
 else rmSync(darkFile, { force: true });
 
 const brand = JSON.parse(readFileSync(brandFile, 'utf8')) as BrandJson & { $schema?: string };
