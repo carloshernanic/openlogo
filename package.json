@@ -1,0 +1,56 @@
+{
+  "name": "openlogo",
+  "version": "0.1.0",
+  "description": "Identifica a marca por trás de descritores de extratos bancários brasileiros e devolve a logo em SVG.",
+  "license": "MIT",
+  "author": "carloshernanic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloshernanic/openlogo.git"
+  },
+  "keywords": [
+    "logo",
+    "brand",
+    "extrato",
+    "banco",
+    "transacao",
+    "conciliacao",
+    "brasil"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsup": "^9.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
