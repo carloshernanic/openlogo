@@ -11,6 +11,7 @@ export interface BrandJson {
   category: string;
   colors: string[];
   aliases: string[];
+  strictAliases?: string[];
   cnpjRoots?: string[];
   logoStatus?: 'ok' | 'missing';
   logoSource?: string;

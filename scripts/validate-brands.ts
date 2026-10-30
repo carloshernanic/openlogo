@@ -42,7 +42,7 @@ for (const folder of folders) {
   if (missing && brand.hasDarkLogo) errors.push(`${where}: logo-dark.svg sem logo.svg`);
 
   // O nome também vira alias no índice, então entra na checagem de colisão.
-  for (const alias of [data.name, ...data.aliases]) {
+  for (const alias of [data.name, ...data.aliases, ...(data.strictAliases ?? [])]) {
     const problem = privacyProblem(alias);
     if (problem) errors.push(`${where}: alias "${alias}" ${problem}`);
 

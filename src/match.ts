@@ -7,6 +7,8 @@ export type MatchStage = 'exact' | 'tokens' | 'prefix' | 'fuzzy';
 export interface AliasEntry {
   alias: string;
   brand: number;
+  /** Só casa quando é o descritor inteiro (palavras comuns como "TIM" ou "OI"). */
+  strict?: boolean;
 }
 
 export interface MatchResult {
@@ -44,6 +46,7 @@ interface PreparedAlias {
   tokens: string[];
   compact: string;
   brand: number;
+  strict: boolean;
 }
 
 interface Scored {
@@ -85,13 +88,21 @@ function buildLookup(pairs: Array<[string, number]>): Map<string, number> {
  * As etapas rodam em ordem e a primeira que encontra uma marca única vence.
  */
 export function createMatcher(entries: readonly AliasEntry[]) {
-  const aliases: PreparedAlias[] = entries
+  const all: PreparedAlias[] = entries
     .filter((e) => e.alias.length > 0)
-    .map((e) => ({ key: e.alias, tokens: e.alias.split(' '), compact: compact(e.alias), brand: e.brand }));
+    .map((e) => ({
+      key: e.alias,
+      tokens: e.alias.split(' '),
+      compact: compact(e.alias),
+      brand: e.brand,
+      strict: e.strict === true,
+    }));
+  // Aliases estritos só participam do match exato.
+  const aliases = all.filter((a) => !a.strict);
 
-  const exact = buildLookup(aliases.map((a) => [a.key, a.brand]));
-  const exactCompact = buildLookup(aliases.map((a) => [a.compact, a.brand]));
-  const keepNumbers = new Set(aliases.flatMap((a) => a.tokens.filter((t) => /^\d+$/.test(t))));
+  const exact = buildLookup(all.map((a) => [a.key, a.brand]));
+  const exactCompact = buildLookup(all.map((a) => [a.compact, a.brand]));
+  const keepNumbers = new Set(all.flatMap((a) => a.tokens.filter((t) => /^\d+$/.test(t))));
   const isKnown = (s: string) => exact.has(s);
 
   return function match(descriptor: string, options: MatchOptions = {}): MatchResult | null {

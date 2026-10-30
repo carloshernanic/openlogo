@@ -3,7 +3,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, loadAllBrands, type BrandEntry } from './lib/brands.ts';
 import { normalizeAlias } from '../src/normalize.ts';
-import type { IndexedBrand } from '../src/resolver.ts';
+import type { IndexedAlias, IndexedBrand } from '../src/resolver.ts';
 
 interface PackageJson {
   version: string;
@@ -29,11 +29,15 @@ function buildIndex(entries: BrandEntry[]) {
     hasDarkLogo: data.logoStatus !== 'missing' && hasDarkLogo,
   }));
 
-  const aliases: Array<[string, number]> = [];
+  const aliases: IndexedAlias[] = [];
   entries.forEach(({ data }, brand) => {
-    const keys = new Set([data.name, ...data.aliases].map(normalizeAlias));
-    // Alias só de números ("99") casaria com qualquer valor ou número de loja no extrato.
-    for (const key of keys) if (key && !/^[\d ]+$/.test(key)) aliases.push([key, brand]);
+    const strict = new Set((data.strictAliases ?? []).map(normalizeAlias));
+    const keys = new Set([...[data.name, ...data.aliases].map(normalizeAlias), ...strict]);
+    for (const key of keys) {
+      // Alias só de números ("99") casaria com qualquer valor ou número de loja no extrato.
+      if (!key || /^[\d ]+$/.test(key)) continue;
+      aliases.push(strict.has(key) ? [key, brand, 1] : [key, brand]);
+    }
   });
   return { brands, aliases };
 }
@@ -42,7 +46,7 @@ const { brands, aliases } = buildIndex(loadAllBrands());
 const cdnBase = `https://cdn.jsdelivr.net/gh/${githubRepo(pkg.repository.url)}@v${pkg.version}/brands/`;
 
 const source = `// Gerado por scripts/build-index.ts a partir de brands/. Não edite à mão.
-import type { IndexedBrand } from '../resolver.js';
+import type { IndexedAlias, IndexedBrand } from '../resolver.js';
 
 export const VERSION = ${JSON.stringify(pkg.version)};
 
@@ -50,7 +54,7 @@ export const CDN_BASE = ${JSON.stringify(cdnBase)};
 
 export const BRANDS: readonly IndexedBrand[] = ${JSON.stringify(brands, null, 2)};
 
-export const ALIASES: ReadonlyArray<readonly [string, number]> = ${JSON.stringify(aliases)};
+export const ALIASES: readonly IndexedAlias[] =${JSON.stringify(aliases)};
 `;
 
 const outDir = join(ROOT, 'src', 'generated');

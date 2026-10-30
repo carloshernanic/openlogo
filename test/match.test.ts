@@ -113,6 +113,17 @@ describe('nunca chuta', () => {
     (descriptor) => expect(resolveSlug(descriptor)).toBeNull(),
   );
 
+  it('alias estrito só casa com o descritor inteiro', () => {
+    const strict = createMatcher([
+      { alias: 'TIM', brand: 0, strict: true },
+      { alias: 'TIM CELULAR', brand: 0 },
+    ]);
+    expect(strict('TIM S.A.')).toMatchObject({ brand: 0, stage: 'exact' });
+    expect(strict('PAGTO TIM CELULAR 1234')).toMatchObject({ brand: 0, stage: 'exact' });
+    expect(strict('TIM HORTONS')).toBeNull();
+    expect(strict('TIMS')).toBeNull();
+  });
+
   it('devolve null quando um alias aponta para duas marcas', () => {
     const ambiguous = createMatcher([
       { alias: 'ACME', brand: 0 },

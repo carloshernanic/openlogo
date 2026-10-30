@@ -10,12 +10,14 @@ export interface IndexedBrand {
   hasDarkLogo: boolean;
 }
 
+/** [alias normalizado, posição da marca em `brands`, 1 se o alias for estrito]. */
+export type IndexedAlias = readonly [alias: string, brand: number] | readonly [alias: string, brand: number, strict: 1];
+
 export interface BrandIndex {
   /** Base das URLs das logos, ex: https://cdn.jsdelivr.net/gh/<owner>/<repo>@v1.0.0/brands/ */
   cdnBase: string;
   brands: readonly IndexedBrand[];
-  /** Pares [alias normalizado, posição da marca em `brands`]. */
-  aliases: ReadonlyArray<readonly [string, number]>;
+  aliases: readonly IndexedAlias[];
 }
 
 export interface Match {
@@ -34,7 +36,7 @@ export interface Match {
 export type ResolveOptions = MatchOptions;
 
 export function createResolver(index: BrandIndex) {
-  const match = createMatcher(index.aliases.map(([alias, brand]) => ({ alias, brand })));
+  const match = createMatcher(index.aliases.map(([alias, brand, strict]) => ({ alias, brand, strict: strict === 1 })));
 
   function resolve(descriptor: string, options: ResolveOptions = {}): Match | null {
     if (typeof descriptor !== 'string') return null;
