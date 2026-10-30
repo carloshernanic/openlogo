@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Paramount+",
+  "slug": "paramount-plus",
+  "website": "https://www.paramountplus.com/br",
+  "category": "streaming",
+  "colors": [
+    "#0064FF"
+  ],
+  "aliases": [
+    "PARAMOUNT PLUS",
+    "PARAMOUNTPLUS",
+    "PARAMOUNT+"
+  ],
+  "logoSource": "simple-icons@16.36.0 (paramountplus): https://www.paramount.com/brand/paramount-plus"
+}

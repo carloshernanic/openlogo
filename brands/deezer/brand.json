@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Deezer",
+  "slug": "deezer",
+  "website": "https://www.deezer.com/br",
+  "category": "streaming",
+  "colors": [
+    "#A238FF"
+  ],
+  "aliases": [
+    "DEEZER",
+    "DEEZER BRASIL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (deezer): https://deezerbrand.com/document/37#/-/logo"
+}

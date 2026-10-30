@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Globoplay",
+  "slug": "globoplay",
+  "website": "https://globoplay.globo.com",
+  "category": "streaming",
+  "colors": [
+    "#FB0234"
+  ],
+  "aliases": [
+    "GLOBOPLAY",
+    "GLOBO PLAY",
+    "GLOBO COMUNICACAO E PARTICIPACOES"
+  ],
+  "logoStatus": "missing"
+}

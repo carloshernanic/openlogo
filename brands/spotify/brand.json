@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Spotify",
+  "slug": "spotify",
+  "website": "https://www.spotify.com/br-pt",
+  "category": "streaming",
+  "colors": [
+    "#1ED760"
+  ],
+  "aliases": [
+    "SPOTIFY",
+    "SPOTIFY BRASIL",
+    "SPOTIFY AB"
+  ],
+  "logoSource": "simple-icons@16.36.0 (spotify): https://developer.spotify.com/documentation/general/design-and-branding/#using-our-logo"
+}

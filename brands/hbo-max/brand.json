@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "HBO Max",
+  "slug": "hbo-max",
+  "website": "https://www.hbomax.com/br",
+  "category": "streaming",
+  "colors": [
+    "#000000"
+  ],
+  "aliases": [
+    "HBO MAX",
+    "HBOMAX",
+    "HBO"
+  ],
+  "logoSource": "simple-icons@16.36.0 (hbomax): https://commons.wikimedia.org/wiki/File:Max_2025_logo.svg"
+}

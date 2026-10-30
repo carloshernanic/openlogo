@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Disney+",
+  "slug": "disney-plus",
+  "website": "https://www.disneyplus.com/pt-br",
+  "category": "streaming",
+  "colors": [
+    "#113CCF"
+  ],
+  "aliases": [
+    "DISNEY PLUS",
+    "DISNEYPLUS",
+    "DISNEY+"
+  ],
+  "logoStatus": "missing"
+}

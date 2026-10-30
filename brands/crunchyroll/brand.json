@@ -1,0 +1,14 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Crunchyroll",
+  "slug": "crunchyroll",
+  "website": "https://www.crunchyroll.com/pt-br",
+  "category": "streaming",
+  "colors": [
+    "#FF5E00"
+  ],
+  "aliases": [
+    "CRUNCHYROLL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (crunchyroll): https://www.crunchyroll.com"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Amazon Prime",
+  "slug": "amazon-prime",
+  "website": "https://www.primevideo.com",
+  "category": "streaming",
+  "colors": [
+    "#00A8E1"
+  ],
+  "aliases": [
+    "AMAZON PRIME",
+    "AMAZONPRIME",
+    "AMAZON PRIME VIDEO",
+    "PRIME VIDEO",
+    "PRIMEVIDEO"
+  ],
+  "logoStatus": "missing"
+}

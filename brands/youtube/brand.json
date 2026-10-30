@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "YouTube",
+  "slug": "youtube",
+  "website": "https://www.youtube.com",
+  "category": "streaming",
+  "colors": [
+    "#FF0000"
+  ],
+  "aliases": [
+    "YOUTUBE",
+    "YOUTUBE PREMIUM",
+    "YOUTUBEPREMIUM",
+    "GOOGLE YOUTUBE"
+  ],
+  "logoSource": "simple-icons@16.36.0 (youtube): https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors"
+}

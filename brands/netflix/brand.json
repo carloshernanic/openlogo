@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Netflix",
+  "slug": "netflix",
+  "website": "https://www.netflix.com/br",
+  "category": "streaming",
+  "colors": [
+    "#E50914"
+  ],
+  "aliases": [
+    "NETFLIX",
+    "NETFLIX.COM",
+    "NETFLIX ENTRETENIMENTO BRASIL"
+  ],
+  "logoSource": "simple-icons@16.36.0 (netflix): https://brand.netflix.com/en/assets/logos"
+}
