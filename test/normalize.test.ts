@@ -6,6 +6,10 @@ describe('tokenize', () => {
     expect(tokenize('Pão de Açúcar')).toEqual(['PAO', 'DE', 'ACUCAR']);
   });
 
+  it('junta palavras separadas por apóstrofo', () => {
+    expect(tokenize("McDonald's")).toEqual(['MCDONALDS']);
+  });
+
   it('remove prefixos de adquirentes seguidos de *', () => {
     expect(tokenize('PAG*MCDONALDS')).toEqual(['MCDONALDS']);
     expect(tokenize('IFD*IFOOD.COM')).toEqual(['IFOOD']);

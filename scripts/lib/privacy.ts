@@ -32,7 +32,7 @@ const CONNECTORS = new Set(['DE', 'DA', 'DO', 'DOS', 'DAS', 'E']);
 function tokens(value: string): string[] {
   return value
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/\p{M}/gu, '')
     .toUpperCase()
     .split(/[^A-Z0-9]+/)
     .filter(Boolean);

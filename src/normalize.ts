@@ -25,8 +25,9 @@ const ACQUIRER_RE = new RegExp(`(^|[^A-Z0-9])(?:${ACQUIRER_PREFIXES.join('|')})\
 export function tokenize(input: string, keepNumbers: NormalizeOptions['keepNumbers'] = undefined): string[] {
   const upper = input
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/\p{M}/gu, '') // acentos viram marcas separadas depois do NFD
     .toUpperCase()
+    .replace(/['’`]/g, '') // MCDONALD'S → MCDONALDS
     .replace(ACQUIRER_RE, '$1 ');
 
   return upper
