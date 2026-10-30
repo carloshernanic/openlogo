@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Pão de Açúcar",
+  "slug": "pao-de-acucar",
+  "website": "https://www.paodeacucar.com",
+  "category": "supermarket",
+  "colors": [
+    "#00A443"
+  ],
+  "aliases": [
+    "PAO DE ACUCAR",
+    "PAODEACUCAR",
+    "MINUTO PAO DE ACUCAR"
+  ],
+  "logoStatus": "missing"
+}

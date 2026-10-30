@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Atacadão",
+  "slug": "atacadao",
+  "website": "https://www.atacadao.com.br",
+  "category": "supermarket",
+  "colors": [
+    "#F47920"
+  ],
+  "aliases": [
+    "ATACADAO",
+    "ATACADAO S.A."
+  ],
+  "logoStatus": "missing"
+}

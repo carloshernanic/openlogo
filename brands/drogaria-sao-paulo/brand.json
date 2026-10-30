@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Drogaria São Paulo",
+  "slug": "drogaria-sao-paulo",
+  "website": "https://www.drogariasaopaulo.com.br",
+  "category": "pharmacy",
+  "colors": [
+    "#E30613"
+  ],
+  "aliases": [
+    "DROGARIA SAO PAULO",
+    "DROGARIASAOPAULO"
+  ],
+  "logoStatus": "missing"
+}

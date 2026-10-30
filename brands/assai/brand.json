@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Assaí Atacadista",
+  "slug": "assai",
+  "website": "https://www.assai.com.br",
+  "category": "supermarket",
+  "colors": [
+    "#0060A8"
+  ],
+  "aliases": [
+    "ASSAI",
+    "ASSAI ATACADISTA",
+    "SENDAS DISTRIBUIDORA"
+  ],
+  "logoStatus": "missing"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Carrefour",
+  "slug": "carrefour",
+  "website": "https://www.carrefour.com.br",
+  "category": "supermarket",
+  "colors": [
+    "#004E9F"
+  ],
+  "aliases": [
+    "CARREFOUR",
+    "CARREFOUR COMERCIO E INDUSTRIA",
+    "CARREFOUR EXPRESS",
+    "CARREFOUR BAIRRO"
+  ],
+  "logoSource": "simple-icons@16.36.0 (carrefour): https://en.wikipedia.org/wiki/File:Carrefour_logo_no_tag.svg"
+}

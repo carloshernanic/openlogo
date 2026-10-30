@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Droga Raia",
+  "slug": "droga-raia",
+  "website": "https://www.drogaraia.com.br",
+  "category": "pharmacy",
+  "colors": [
+    "#00975A"
+  ],
+  "aliases": [
+    "DROGA RAIA",
+    "DROGARAIA",
+    "RAIA"
+  ],
+  "logoStatus": "missing"
+}

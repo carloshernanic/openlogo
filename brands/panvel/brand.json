@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Panvel",
+  "slug": "panvel",
+  "website": "https://www.panvel.com",
+  "category": "pharmacy",
+  "colors": [
+    "#0055A5"
+  ],
+  "aliases": [
+    "PANVEL",
+    "PANVEL FARMACIAS"
+  ],
+  "logoStatus": "missing"
+}

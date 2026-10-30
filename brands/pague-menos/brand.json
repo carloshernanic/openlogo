@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Pague Menos",
+  "slug": "pague-menos",
+  "website": "https://www.paguemenos.com.br",
+  "category": "pharmacy",
+  "colors": [
+    "#E30613"
+  ],
+  "aliases": [
+    "PAGUE MENOS",
+    "PAGUEMENOS",
+    "FARMACIAS PAGUE MENOS"
+  ],
+  "logoStatus": "missing"
+}

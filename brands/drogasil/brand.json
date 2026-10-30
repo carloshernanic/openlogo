@@ -1,0 +1,14 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Drogasil",
+  "slug": "drogasil",
+  "website": "https://www.drogasil.com.br",
+  "category": "pharmacy",
+  "colors": [
+    "#E2001A"
+  ],
+  "aliases": [
+    "DROGASIL"
+  ],
+  "logoStatus": "missing"
+}
