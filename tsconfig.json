@@ -14,8 +14,9 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": true,
+    "allowJs": true,
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src", "scripts", "test", "*.ts"]
+  "include": ["src", "scripts", "test", "*.ts", "*.mjs"]
 }
