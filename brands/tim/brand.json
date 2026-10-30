@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "TIM",
+  "slug": "tim",
+  "website": "https://www.tim.com.br",
+  "category": "telecom",
+  "colors": [
+    "#004691"
+  ],
+  "aliases": [
+    "TIM",
+    "TIM S A",
+    "TIM BRASIL",
+    "TIM CELULAR"
+  ],
+  "logoStatus": "missing"
+}

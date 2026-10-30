@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Claro",
+  "slug": "claro",
+  "website": "https://www.claro.com.br",
+  "category": "telecom",
+  "colors": [
+    "#DA291C"
+  ],
+  "aliases": [
+    "CLARO",
+    "CLARO S.A.",
+    "CLARO NET",
+    "CLARO TV",
+    "NET SERVICOS"
+  ],
+  "logoStatus": "missing"
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Shell",
+  "slug": "shell",
+  "website": "https://www.shell.com.br",
+  "category": "fuel",
+  "colors": [
+    "#FFD500",
+    "#DD1D21"
+  ],
+  "aliases": [
+    "SHELL",
+    "POSTO SHELL",
+    "SHELL BOX",
+    "SHELLBOX"
+  ],
+  "logoSource": "simple-icons@16.36.0 (shell): https://en.wikipedia.org/wiki/File:Shell_logo.svg"
+}

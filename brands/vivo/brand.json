@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Vivo",
+  "slug": "vivo",
+  "website": "https://www.vivo.com.br",
+  "category": "telecom",
+  "colors": [
+    "#660099"
+  ],
+  "aliases": [
+    "VIVO",
+    "TELEFONICA BRASIL",
+    "VIVO FIBRA",
+    "VIVO MOVEL",
+    "VIVO EASY"
+  ],
+  "logoStatus": "missing"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Oi",
+  "slug": "oi",
+  "website": "https://www.oi.com.br",
+  "category": "telecom",
+  "colors": [
+    "#FF6B00"
+  ],
+  "aliases": [
+    "OI",
+    "OI FIBRA",
+    "OI MOVEL",
+    "OI S.A."
+  ],
+  "logoStatus": "missing"
+}

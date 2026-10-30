@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Petrobras",
+  "slug": "petrobras",
+  "website": "https://www.postospetrobras.com.br",
+  "category": "fuel",
+  "colors": [
+    "#008542",
+    "#FFCC00"
+  ],
+  "aliases": [
+    "PETROBRAS",
+    "POSTO PETROBRAS",
+    "POSTO BR",
+    "BR DISTRIBUIDORA",
+    "VIBRA ENERGIA"
+  ],
+  "logoStatus": "missing"
+}

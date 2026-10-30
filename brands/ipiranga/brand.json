@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/brand.schema.json",
+  "name": "Ipiranga",
+  "slug": "ipiranga",
+  "website": "https://www.ipiranga.com.br",
+  "category": "fuel",
+  "colors": [
+    "#003F87",
+    "#FFCC00"
+  ],
+  "aliases": [
+    "IPIRANGA",
+    "POSTO IPIRANGA",
+    "ABASTECE AI"
+  ],
+  "logoStatus": "missing"
+}
