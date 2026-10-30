@@ -46,7 +46,12 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepare": "husky",
-    "validate:brands": "tsx scripts/validate-brands.ts"
+    "validate:brands": "tsx scripts/validate-brands.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "prebuild": "npm run build:index",
+    "pretest": "npm run build:index",
+    "pretypecheck": "npm run build:index",
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.4",
