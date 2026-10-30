@@ -75,6 +75,13 @@ describe('etapa de prefixo', () => {
     expect(resolveSlug('DROGA')).toBeNull();
   });
 
+  it('só aceita alias colado quando o resto é ruído', () => {
+    expect(resolveSlug('MCDONALDS4521')).toEqual({ slug: 'mcdonalds', stage: 'prefix', confidence: 0.8 });
+    expect(resolveSlug('NETFLIXCOMBR')).toEqual({ slug: 'netflix', stage: 'prefix', confidence: 0.8 });
+    expect(resolveSlug('NETFLIXADA')).toBeNull();
+    expect(resolveSlug('SPOTIFYSOM CASA')).toBeNull();
+  });
+
   it('não trata palavra genérica inteira como truncamento', () => {
     expect(resolveSlug('DROGARIA')).toBeNull();
     expect(resolveSlug('MERCADO')).toBeNull();

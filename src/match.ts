@@ -34,7 +34,10 @@ const MIN_FUZZY_LENGTH_RATIO = 0.75;
 // Diferença mínima entre a melhor marca e a segunda no fuzzy; abaixo disso é empate.
 const FUZZY_TIE_MARGIN = 0.02;
 
-const lengthRatio = (a: string, b: string) => Math.min(a.length, b.length) / Math.max(a.length, b.length);
+// O que pode vir grudado depois de um alias: dígitos, país, ".COM", ".COM.BR", sufixo societário.
+const GLUED_NOISE = /^(\d+|BR|BRA|BRASIL|COM|COMBR|SA|LTDA)\d*$/;
+
+const lengthRatio =(a: string, b: string) => Math.min(a.length, b.length) / Math.max(a.length, b.length);
 
 interface PreparedAlias {
   key: string;
@@ -128,9 +131,15 @@ export function createMatcher(entries: readonly AliasEntry[]) {
       }
     }
 
-    // 3b. Alias colado a outro texto ("SPOTIFYBR"). O alias mais longo vence.
+    // 3b. Alias colado a ruído ("SPOTIFYBR", "MCDONALDS4521"). O que sobra precisa ser
+    // ruído conhecido; senão "APPLEBEES" viraria Apple e "SHELLY" viraria Shell.
     const glued = aliases
-      .filter((a) => queryCompact.startsWith(a.compact) && a.compact.length >= MIN_PREFIX_LENGTH)
+      .filter(
+        (a) =>
+          a.compact.length >= MIN_PREFIX_LENGTH &&
+          queryCompact.startsWith(a.compact) &&
+          GLUED_NOISE.test(queryCompact.slice(a.compact.length)),
+      )
       .map((a) => ({ brand: a.brand, score: a.compact.length }));
     if (glued.length > 0) {
       const brand = pickUnique(glued);
